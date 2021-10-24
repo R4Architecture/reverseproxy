@@ -9,7 +9,7 @@ services:
       - "443:443"
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
-      - ./certs:/etc/nginx/certs
+      - ../certs:/etc/nginx/certs
       # added to allow for development CA certificates NB you also need to run "update-ca-certificates > /dev/null 2>&1" for this certificate to get activated (don't mind the error it is a known bug)
       #      - ./certs/canvas.r4a.nl.pem/etc/nginx/dhparam/dhparam.pem
       - ../certs/localCA.crt:/usr/local/share/ca-certificates/ca-certificates.crt
