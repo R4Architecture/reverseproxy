@@ -12,6 +12,5 @@ This project works best in conjunction with the LTI-SSL-environment repository.
 
 To start the project run
 
-  go.sh
-  
- 
+    ./go.sh
+
